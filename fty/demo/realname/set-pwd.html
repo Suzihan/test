@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>泛天盈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../asset/css/layout.css">
+    <link rel="stylesheet" href="../../asset/css/bui.css">
+    <link rel="stylesheet" href="../../asset/css/regist.css">
+</head>
+<body>
+<div class="page">
+    <header class="m-header">
+        <div class="m-header-bar">
+            <div class="header-col">
+                <a href="javascript:;" class="go-back-icon" id="J_header_back"></a>
+            </div>
+            <div class="m-header-title">设置交易密码</div>
+            <div class="header-col">
+                <a href="#" class="header-sub-text">跳过</a>
+            </div>
+        </div>
+    </header>
+    <div class="m-content bg-gray">
+        <div class="bg-white">
+            <ul class="flex invest-period-warp">
+                <li>
+                    <div class="invest-period finished">
+                        <div class="pa">
+                            实名认证
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="invest-period invest-period-dotted">
+                    </div>
+                </li>
+                <li>
+                    <div class="invest-period real-name-icon-2 active">
+                        <div class="pa">
+                            设置交易密码
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="invest-period invest-period-dotted">
+                    </div>
+                </li>
+                <li>
+                    <div class="invest-period real-name-icon-3">
+                        <div class="pa">
+                            风险评测
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="bg-white real-tips-wrap">
+            <div class="tips-bar fc-888">
+                为保证您的资金在交易过程中的安全，请设置交易密码。
+            </div>
+        </div>
+        <div class="pt8">
+            <ul class="bui-list">
+                <li class="bui-btn bui-box">
+                    <div class="span1">
+                        <div class="bui-input user-input">
+                            <input id="pwd" type="number" class="C-empty-ipt" placeholder="设置6位数字密码" oninput="if(value.length>6)value=value.slice(0,6)">
+                        </div>
+                    </div>
+                </li>
+                <li class="bui-btn bui-box">
+                    <div class="span1">
+                        <div class="bui-input user-input pr">
+                            <input id="pwd2" type="number" class="C-empty-ipt" placeholder="再确认交易密码" oninput="if(value.length>6)value=value.slice(0,6)">
+                            <span class="show-password-icon"></span>
+                            <span class="ipt-empty-icon"></span>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <footer class="m-footer">
+        <div class="fixed-bottom-bar">
+            <div class="now-invest">
+                <a href="javascript:;" class="btn go-invest-btn">确认</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="../../asset/plugins/layer_mobile/layer.js"></script>
+<script src="../../asset/js/common.js"></script>
+</body>
+</html>

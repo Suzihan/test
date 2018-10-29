@@ -1,0 +1,70 @@
+@charset "utf-8";
+.all-income-total{padding:20px 0;}
+.spilt-tips{line-height: 30px; font-size: 12px; text-align: center; color: #999;}
+.all-income-list li{padding:0 15px; background: #fff; margin-bottom: 8px; background: #fff;}
+.all-income-list li:last-child{margin-bottom:0;}
+.all-income-item{color: #222;}
+.all-income-tit{border-bottom: 1px solid #ddd; padding:5px 0; line-height: 28px; font-size: 12px;}
+.all-income-tit-col{font-weight: bold; font-size: 12px;}
+.all-income-ct{padding:12px 0;}
+.all-income-bar{border-top:1px solid #ddd; padding:5px 0; line-height: 18px; font-size: 12px; color: #999;}
+.btn-view{border: 1px solid #08a1ea; border-radius: 3px; padding:0 8px; color: #0f70b9;}
+.income-table{border: 1px solid #ccc; text-align: center; line-height: 26px;}
+.income-table th{background: #ddd; color: #666;}
+.income-table th,.income-table td{border-left: 1px solid #ccc; border-right: 1px solid #ccc;}
+.income-table tr:nth-child(even) td{background: #f8f8f8;}
+#eChart{width: 100vw; height: 100vw;}
+.property-total{top: 1em; left: 0; right: 0;}
+.property-item-row{left: 0; right: 0; bottom: 1em; padding-left: 30.4vw;}
+.property-item-row em{display: inline-block; width: 12px; height: 12px; border-radius: 100%; vertical-align: -1px; margin-right: 3px;}
+.property-fixed-btn .btn{width: 40vw;}
+.modify-panel{background: #fff; font-size: 13px;}
+.modify-panel li{padding: 0 5.6vw; line-height: 44px; border-bottom: 1px solid #ddd;}
+.modify-panel li:last-child{border-bottom: 0}
+.modify-col{position: relative; min-height: 40px;}
+.modify-tit+.modify-col{padding-left: 78px;}
+.modify-ipt{border: 0; width: 100%; height: 44px; line-height: 44px; font-size: 13px;}
+.modify-ipt::-webkit-input-placeholder {  font-size: 13px;}
+
+.transaction-detail li{padding:4.8vw 8vw; margin-bottom: 8px; background: #fff;}
+.transaction-detail li:last-child{margin-bottom: 0;}
+.transaction-icon{float: left; width: 28px; margin-top:8px;}
+.transaction-item-col{padding-left: 44px; line-height: 22px;}
+.slide-up-tips:before{ display: none;}
+.slide-up-tips span{background: #fff;}
+.bank-card-panel{padding:0 8vw;}
+.bank-card-msg{padding-top: 15px; padding-bottom: 5px; line-height: 22px;}
+.bank-card-msg .fl{width: 36px; margin-right: 16px;}
+.contract-item.bank{padding:0;}
+.contract-item.bank li{padding:0 8vw;}
+.contract-item.setting li{padding:0 15px; border-color: #eee;}
+.contract-item.setting em{display: inline-block; width: 16px; height: 16px; background-image: url("../images/centre/setting-icon.png"); background-repeat:no-repeat; background-size: 16px auto; margin:14px 16px 0 0;}
+.contact-us-icon{background-position: 0 center;}
+.about-icon{background-position: 0 bottom;}
+
+.invest-finish-btn-box.bank{padding: 4.8vw  26.4vw 9.6vw;}
+.centre-subnav-item li{position: relative; z-index: 3; float: left; width: 50%; border-bottom: 1px solid #eee; line-height: 44px;}
+.centre-subnav-item li:nth-child(even):after{content:''; position: absolute; top: 0; bottom: 0; left: 0; border-left:1px solid #ddd;}
+.centre-subnav-item li:only-child{width: 100%;
+    border-bottom: 0;}
+.centre-subnav-item .fl{margin:0 14px 0 15px; width: 16px;}
+.my-invest-tab-head{border-bottom: 1px solid #ddd; padding:0 15px; line-height: 36px;}
+.deadline{ display: inline-block;  vertical-align: 1px;  background: #eee;  font-size: 12px;  padding:0 10px;  margin-left: 6px;  line-height: 18px;  border-radius: 18px;  color: #666;}
+.my-invest-tab-ct li{padding:16px 0; line-height: 20px;}
+.my-invest-tab-ct li a{display: block; border-right:1px solid #eee;}
+.my-invest-tab-ct li:last-child a{border: 0;}
+.person-total{padding:8px 15px;}
+.person-total-main{padding:12px; background: #007bff url("../images/centre/person-total-bg.png") no-repeat; background-size: cover; border-radius: 5px; color: #fff;}
+.person-total-main a{color: #fff;}
+.person-total-main .right-arrow-icon.white{background-size: auto 7px; padding-right: 10px;}
+.person-balance-bar{line-height: 36px;}
+.person-btn{display: inline-block; border: 1px solid #666; border-radius: 5px; padding:0 10px; line-height: 22px; font-size: 12px; color: #666;}
+.person-btn.blue{border-color: #1480df; color: #1480df;}
+.person-btn:last-child{margin-left: 3px;}
+.person-cover-bar{padding-bottom: 5px; line-height: 26px;}
+.person-cover{width: 26px; height: 26px; margin-right: 8px; background-size: cover; border-radius: 100%;}
+
+.bank-limit{border: 1px solid #eee; border-collapse: collapse; width: 100%; text-align: center;}
+.bank-limit th{border: 1px solid #eee; line-height: 38px; background: #f6f6f6; font-weight: normal;}
+.bank-limit td{border: 1px solid #eee; color: #505151;}
+.bank-limit td:first-child{width:32vw;}

@@ -1,0 +1,164 @@
+
+html,body{overflow: visible;}
+.regist-header .m-header-bar{background: #fff;}
+.regist-header .go-back-icon{ background: url("../images/regist/reg-back-icon.png") center no-repeat; background-size: auto 20px; }
+.fl { float: left}
+.fr { float: right}
+.clear { clear: both}
+.bc { margin-left: auto; margin-right: auto;}
+.show { display: block;}
+.of { overflow: hidden}
+.fb { font-weight: 700}
+.fm-yh { font-family: "Microsoft YaHei"}
+.fm-al { font-family: "Arial"}
+.tc { text-align: center}
+.tr { text-align: right}
+.t05 { text-indent: .5rem}
+.mt012 { margin-top: .12rem}
+.mt03 { margin-top: .3rem}
+.mt04 { margin-top: .4rem}
+.mt05 { margin-top: .5rem}
+.mt066 { margin-top: .66rem}
+.mt1 { margin-top: 1rem}
+.mr012 { margin-right: .12rem}
+.pb012 { padding-bottom: .12rem}
+.ptb012 { padding-top: .12rem; padding-bottom: .12rem}
+
+.bk-white { background: #fff}
+.bk-f8f8f8 { background: #f8f8f8}
+
+/*字体*/
+.fs-017 { font-size: .17rem}
+.fs-024 { font-size: .24rem}
+.wp50 { width: 50%}
+.icon-gray { color: #666 }
+.icon-yellow{ color: #ffad03;}
+.icon-thinblue{ color: #56ced5;}
+.icon-green,.fc-green{ color: #6ed046;}
+.icon-red{ color: #fd8886;}
+.fc-red { color: #f30}
+.fc-222 { color: #222}
+.fc-666 { color: #666}
+.fc-blue { color: #228df8}
+
+.fty-btn-default { display: inline-block; width: 100%; height: .66rem; font: .24rem/.68rem "Microsoft YaHei"; color: #666; background: #fff; border: 1px solid #888; text-align: center; border-radius: 2rem}
+.fty-btn-primary { display: inline-block; width: 100%; height: .66rem; font: .24rem/.68rem "Microsoft YaHei"; color: #fff; background: #228df8; text-align: center; border-radius: 2rem}
+.fty-btn-disabled { color: #ccc; background: #efefef;}
+
+/*皮肤*/
+.header.bui-bar, .header .bui-bar, header.bui-bar, header .bui-bar {background: #08a1ea; }
+.bui-dialog-head { text-align: center; border-bottom: 1px solid #efefef}
+
+/*登录*/
+.login-page main{ background-color: #f8f8f8;}
+.reg-logo{padding:8vw 0;}
+.login-form {padding:0 15px;}
+.login-form .bui-list{border-top: none; margin-bottom: .3rem;}
+.login-form .bui-list li{padding:0; border-bottom:0;}
+.login-form .bui-btn{padding-left: 0; padding-right: 0;}
+.login-form .bui-label{width: 0.5rem;}
+.login-form .icon-face,
+.login-form .icon-lock{font-size: 0.36rem;}
+.login-form .bui-input {height: 15.2vw; position: relative;}
+.login-form .bui-input input{text-align: center; height: 15.2vw; border-bottom: 1px solid #c7c7c7;}
+.login-form .bui-input input:focus{border-color: #08a1ea;}
+.login-form .primary{background-color: #52a4ff; color: #ffffff; font-size: 0.26rem; -webkit-border-radius: 0.06rem; border-radius: 0.06rem; padding-top: 0.2rem; padding-bottom: 0.2rem; margin-bottom: .2rem;}
+.login-form .bui-btn-text{text-align: center; color: #666666; font-size: 0.2rem;}
+.copyright:after{content:''; display: block; height: 22.4vw;}
+.copyright>div{position: absolute; left: 0; right: 0; bottom: 0; background:url("../images/regist/login-diwen.png") 50% 50% no-repeat; background-size:auto 22.4vw ; height: 22.4vw; line-height: 33.4vw; color: #004c86;}
+
+.copyright  a {color: #004c86}
+.reg-btn-wrap{padding:8vw 13.3333vw;}
+
+/*注册*/
+
+/*防止动态增加图标时抖动*/
+.register-page .bui-input {height: .6rem;}
+.btn-send{display: inline-block; color: #52a4ff; font-size: 0.2rem; padding: 0 0.1rem; min-height: .4rem; height: .5rem; line-height: .5rem; border: 1px solid #52a4ff;}
+.btn-send.disabled {border: 1px solid #dedede;}
+.fyt-fwxy-checkbox { margin-right:.2rem; display: inline-block; width: .18rem; height: .17rem; background: url("../images/regist/ico-ydtk.png") 0 0 no-repeat; background-size: 100%;}
+.fyt-fwxy-checkbox-active { background: url("../images/regist/ico-ydtk-01.png") 0 0 no-repeat; background-size: 100%;}
+.reg-checkbox{ width: 14px; height: 14px; border: 0; background: url("../images/regist/ico-ydtk.png") no-repeat; background-size: 14px auto; vertical-align: 0}
+.reg-checkbox:checked{background-image: url("../images/regist/ico-ydtk-01.png"); }
+.send-msg-blue { height: 1.1rem; font:700 .4rem/1.1rem "Arial"; color: #1975d1}
+.eyes-close { display: inline-block; position: absolute; top: .25rem; right: .25rem; width: .19rem; height: .19rem; background: url("../images/regist/eyes-close.png") 50% no-repeat; background-size: 100%}
+.input-clear { display: inline-block; position: absolute; top: .25rem; right: .5rem; width: .19rem; height: .19rem; background: url("../images/regist/input-clear.png") 50% no-repeat; background-size: 100%}
+.btn-txjl { display: inline-block; margin-top: .2rem; width: .94rem; height: .32rem; font: .2rem/.32rem "SimHei"; color: #fff; text-align: center; border: 1px solid #fff; border-radius: 2px;}
+.btn-jump { display: inline-block; margin-top: .2rem; width: .55rem; height: .32rem; color: #fff; border: 1px solid #fff; text-align: center}
+.withdraw-selected-bank, .withdraw-box { padding: 15px 8vw 12px; background: #fff}
+.withdraw-selected-bank .wsb-text1{ font:700 .24rem/.3rem "Microsoft YaHei"; color: #222}
+.withdraw-selected-bank .wsb-text2{ font: .18rem/.34rem "Microsoft YaHei"; color: #888}
+.withdraw-selected-bank>.span1{width: 52px;}
+.wb-account-total { font: 14px/100% "Microsoft YaHei"; color: #666; padding-bottom: 15px;}
+.wb-unit { color: #222; font:.32rem/100% "Microsoft YaHei"; line-height: .5rem;margin-top: .05rem;}
+.wb-money { width: 80%; height: .5rem; font: .44rem/100% "Arial"; color: #222; }
+.wb-money input { font: .44rem/100% "Arial"; color: #222; width: 80%; height: .5rem;line-height: .5rem}
+.wb-all { margin-top: .2rem;}
+.withdraw-info { color: #666; padding:0 8vw; line-height: 20px;}
+.wd-suc-top { width: 100%; height: 1.8rem; background: url("../images/regist/bk-blue-wb.png") 50% no-repeat; background-size: 100%; display: flex; justify-content:center; align-items: center;}
+.wd-suc-top .fty-icon-success { display: inline-block; width: .83rem; height: .83rem; background: url("../images/regist/ico-success.png") 50% no-repeat; background-size: 100%;}
+.wd-suc-top .fty-icon-fail { width: .83rem; height: .83rem; background: url("../images/regist/ico-fail.png") 50% no-repeat; background-size: 100%;}
+.wd-suc-top .wd-success-text { margin-left: .12rem; font: .26rem/100% "Microsoft YaHei"; color: #fff}
+
+.wd-suc-info { margin: 1rem auto; width: 80%; font:.24rem/.3rem "Microsoft YaHei"; color: #222}
+.wd-bank-ico img { width: 24px; }
+.code-verify { position: relative;}
+.code-verify input { width:100%; height: 15.2vw; color: #222;}
+
+.bui-label{width: 19.2vw; color: #666;}
+.code-verify .get-code { position: absolute; top:0; right: 0; padding: .1rem;color: #228df8; border:1px solid #228df8; border-radius: 2rem;}
+.code-verify .code-disabled { color: #ccc; border:1px solid #ddd;}
+
+.wd-trans-input { margin-top: .3rem; text-align: center; border: 0; border-bottom: 1px solid #228df8}
+
+.fxpc-box h3.section-title { height: .6rem; font:.24rem/.6rem "Microsoft YaHei"; color: #222 }
+.white-page main { background: #fff}
+.fxpc-footer-info:after{content:''; display: block; height: calc(13.8vw + 36px); padding-top: 9.6vw;}
+.fxpc-footer-info>div{position: absolute; left: 0; right: 0; bottom: 0; border-top: 1px solid #efefef; padding:6.4vw 11.2vw ; font-size: 12px; line-height: 18px;}
+.fxpc-result-title { padding: 9.6vw 0 0; color: #666; font-size: .18rem; text-align: center}
+.fxpc-result-img { margin: .3rem auto 0; width: 50.6667vw; height: 50.6667vw; line-height: 2.5rem; font-size:.28rem; color: #228df8; background: url("../images/regist/img-fxpc.png") 50% no-repeat; background-size: 100%; text-align: center}
+
+.setpwd-info { padding: .12rem; font-size: .18rem}
+.smrz-form .input-clear { right: 0}
+.smrz-form, .code-verify input { text-indent: 0}
+
+.bui-list .bui-box{padding:0 8vw; line-height: 15.2vw; min-height: 15.2vw;}
+.bui-list .bui-box input{color: #222; font-size:14px;}
+.withdraw-btn-wrap{padding:8vw;}
+.smrz-form .bui-list .bui-box,.fxpc-box .bui-list .bui-box{padding:0 5.6vw;}
+.panel-title{padding:0 5.6vw; line-height: 30px; font-size:13px;}
+.city-select{display: block; width: 100%; height: 0.6rem; line-height: .6rem; border: 0; background: url("../images/right-arrow-icon.png") right center no-repeat; background-size: auto 12px;font-size:14px;}
+.bg-white+.real-tips-wrap{background: none; padding-bottom: 1.25vw!important;}
+.bg-white+.real-tips-wrap .tips-bar{background-image: url("../images/tips-gray-icon.png");}
+.real-name-icon-1{background-image: url("../images/regist/real-name-icon-1.png");}
+.real-name-icon-2{background-image: url("../images/regist/real-name-icon-2.png");}
+.real-name-icon-2.active{background-image: url("../images/regist/real-name-icon-2-active.png");}
+.real-name-icon-3{background-image: url("../images/regist/real-name-icon-3.png");}
+.real-name-icon-3.active{background-image: url("../images/regist/real-name-icon-3-active.png");}
+.invest-period-warp{padding:12px 5.6vw 32px;}
+.fxpc-page-num{padding:15px;}
+.fxpc-page-num .pa{top: 15px; left: 11.2vw;}
+
+.bank-limit-tips{padding:12px 8vw; border-top:1px solid #ddd;}
+.fxpc-box .radio{background-size: 16px auto; width: 16px; height: 16px;}
+
+.swiper-pagination.flex span{height: 2px; border-radius: 0; margin: 0 !important;}
+.swiper-pagination.flex .swiper-pagination-bullet{ opacity:0;}
+.swiper-pagination.flex .swiper-pagination-bullet-active{opacity:1;}
+input.tl{
+    text-align: left!important;
+    text-indent: 1em;}
+.forget-tips{ padding:8vw  0 8vw 14px;}
+.swiper-wrapper .bui-list .bui-box .span1{
+    padding:4vw 0;
+    line-height: 7.2vw;
+}
+.bank-card-msg{line-height: 22px;width:100%;
+    font-family:"Microsoft YaHei";
+    font-size: 14px;}
+.bank-card-msg .fl{width: 36px; margin-right: 16px;}
+.contract-item.bank{padding:0;}
+.contract-item.bank li{padding:0 8vw;}
+.bank-card-col p{    margin-bottom:0;
+    font-size: 14px;
+    color: #666;}

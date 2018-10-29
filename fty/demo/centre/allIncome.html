@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>泛天盈</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../asset/css/layout.css">
+    <link rel="stylesheet" href="../../asset/css/centre.css">
+</head>
+<body>
+<div class="page">
+    <header class="m-header">
+        <div class="m-header-bar">
+            <div class="header-col">
+                <a href="javascript:;" class="go-back-icon" id="J_header_back"></a>
+            </div>
+            <div class="m-header-title">我的资产</div>
+            <div class="header-col"></div>
+        </div>
+    </header>
+    <div class="m-content bg-gray">
+        <div id="wrapper">
+            <div id="scroller">
+                <ul class="flex tab-nav bg-white">
+                    <li>
+                        <a href="property.html">总资产</a>
+                    </li>
+                    <li>
+                        <a href="allIncome.html" class="curr">累计收益</a>
+                    </li>
+                </ul>
+                <div class="bg-white tc all-income-total">
+                    <p>累计已收利息(元)</p>
+                    <div class="f24">10000.99</div>
+                </div>
+                <div class="wrap">
+                    <div class="spilt-tips">--- 已收本息明细 ---</div>
+                    <ul class="all-income-list">
+                        <li>
+                            <div class="all-income-item">
+                                <div class="all-income-tit">
+                                    <span class="fr f12 fc-999">回款：2017-08-20</span>
+                                    <span class="fb f14">天金所产品 10002期</span>
+                                </div>
+                                <div class="all-income-ct">
+                                    <div class="flex lh24">
+                                        <div>
+                                            <p class="fc-666 f12">已收本金(元)</p>
+                                            <div class="fb f18">10000</div>
+                                        </div>
+                                        <div>
+                                            <p class="fc-666 f12">已收利息(元)</p>
+                                            <div class="fb f18 fc-red">10000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="all-income-item">
+                                <div class="all-income-tit">
+                                    <span class="fr f12 fc-999">回款：2017-08-20</span>
+                                    <span class="fb f14">天金所产品 10002期</span>
+                                </div>
+                                <div class="all-income-ct">
+                                    <div class="flex lh24">
+                                        <div>
+                                            <p class="fc-666 f12">已收本金(元)</p>
+                                            <div class="fb f18">10000</div>
+                                        </div>
+                                        <div>
+                                            <p class="fc-666 f12">已收利息(元)</p>
+                                            <div class="fb f18 fc-red">10000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="pullUp" class=""><span class="pullUpLabel">上拉查看更多</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="../../asset/plugins/layer_mobile/layer.js"></script>
+<script src="../../asset/plugins/iscroll/iscroll.js"></script>
+<script src="../../asset/js/common.js"></script>
+<script>
+    fty.iScroll();
+</script>
+</body>
+</html>

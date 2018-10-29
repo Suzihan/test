@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>泛天盈</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../asset/css/layout.css">
+    <link rel="stylesheet" href="../../asset/css/invest.css">
+</head>
+<body>
+<div class="page">
+    <header class="m-header">
+        <div class="m-header-bar">
+            <div class="header-col">
+                <a href="javascript:;" class="go-back-icon" id="J_header_back"></a>
+            </div>
+            <div class="m-header-title">投资 天金所产品XXXX期</div>
+            <div class="header-col"></div>
+        </div>
+    </header>
+    <div class="m-content bg-gray">
+        <div class="invest-confirm-panel lh24">
+            <div class="item"><span class="fl fc-666">年化利率：</span>
+                <div class="invest-confirm-col">7.5%</div>
+            </div>
+            <div class="item"><span class="fl fc-666">产品期限：</span>
+                <div class="invest-confirm-col">180天</div>
+            </div>
+            <div class="item"><span class="fl fc-666">可投金额：</span>
+                <div class="invest-confirm-col fb">123,777元</div>
+            </div>
+        </div>
+        <div class="invest-confirm-panel lh24">
+            <div  class="enable-balance-item">
+                <a href="#" class="fr go-recharge-btn">充值</a>
+                <span class="fl fc-666">可用余额：</span>
+                <div class="invest-confirm-col fb">100,000元</div>
+            </div>
+            <div class="item">
+                <div class="pt10 pb10 fc-666">投资金额：</div>
+                <div class="start-money-box pr">
+                    <span class="pa">￥</span>
+                    <input type="text" class="start-money-ipt C-empty-ipt" placeholder="1000元起投，1000元递增">
+                    <em class="ipt-empty-icon"></em>
+                    <div class="predict-tips fc-666">预计利息 <span class="fc-red">500元</span></div>
+                </div>
+                <div class="f12 fc-red tc start-money-tips">投资金额不可大于剩余可投金额</div>
+            </div>
+        </div>
+        <div class="bg-white confirm-coupon-panel">
+            <ul class="contract-item">
+                <li>
+                    <a href="#" class="fc-222 right-arrow-icon">
+                        <span class="fl fc-666">年化利率：</span>
+                        <div class="invest-confirm-col fc-orange">50元投资金</div>
+                    </a>
+                </li>
+                <li>
+                    <span class="fl fc-666">还需支付：</span>
+                    <div class="invest-confirm-col fc-red">100.00元</div>
+                </li>
+            </ul>
+        </div>
+        <div class="p15">
+            <div class="checkbox-wraper"><input type="checkbox" class="checkbox">
+                阅读并同意<a href="#" class="fc-blue">《风险揭示书》</a>、<a href="#" class="fc-blue">《产品合约》</a> 和<a href="#" class="fc-blue">《产品说明书》</a></div>
+        </div>
+    </div>
+    <footer class="m-footer line">
+        <div class="fixed-bottom-bar">
+            <div class="now-invest">
+                <a href="javascript:;" class="btn go-invest-btn">确认购买</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="../../asset/plugins/layer_mobile/layer.js"></script>
+<script src="../../asset/js/common.js"></script>
+<div id="ttt">
+    <div class="m-dialog trade-password-dialog">
+        <div class="m-dialog-body">
+            <div class="trade-password-error f16 tc">支付密码不正确</div>
+            <div class="trade-password-error-btn">
+                <a href="#" class="btn go-invest-btn fr">忘记密码</a>
+                <a href="javascript:;" class="btn go-invest-btn btn-gray">重新输入</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+var func = function () {
+    fty.tradePasswordError('默认支付密码不正确',func);
+}
+    fty.tradePassword(func);
+
+
+
+</script>
+</body>
+</html>

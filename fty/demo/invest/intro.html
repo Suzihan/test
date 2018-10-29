@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>泛天盈</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../asset/css/layout.css">
+    <link rel="stylesheet" href="../../asset/css/invest.css?22">
+    <script>
+        var base_path;
+    </script>
+</head>
+<body>
+<div class="page">
+    <header class="m-header">
+        <div class="m-header-bar">
+            <div class="header-col">
+                <a href="javascript:;" class="go-back-icon" id="J_header_back"></a>
+            </div>
+            <div class="m-header-title">天金所产品 1号2期</div>
+            <div class="header-col"></div>
+        </div>
+    </header>
+    <div class="m-content bg-gray">
+        <div id="wrapper" class="bg-gray">
+            <div id="scroller">
+                <div class="invest-status">
+                    <div class="invest-progress-panel">
+                        <div class="interest-range-tips tc">约定年化利率</div>
+                        <div class="interest-range tc">8.5<span class="f14">%~</span>9.0<span class="f14">%</span></div>
+                        <div class="invest-progress-warp pb8">
+                            <div class="invest-progress-bar"><em style="width: 19%;"></em></div>
+                            <div class="f12 tr"><span class="fl">投资进度：80%</span> <span>可投金额：100000元</span></div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="flex invest-scale-tab bg-white">
+                    <li>
+                        <div class="f12 fc-666">产品规模</div>
+                        <div class="f14">1000万元</div>
+                    </li>
+                    <li>
+                        <div class="f12 fc-666">还款方式</div>
+                        <div class="f14">一次性还本付息</div>
+                    </li>
+                    <li>
+                        <div class="f12 fc-666">产品规模</div>
+                        <div class="f14">1000万元</div>
+                    </li>
+                </ul>
+                <div class="project-panel">
+                    <div class="project-panel-tit">
+                        <b class="f14">投资周期</b>
+                    </div>
+                    <div class="project-panel-ct">
+                        <ul class="flex invest-period-warp">
+                            <li>
+                                <div class="invest-period invest-period-type-1">
+                                    <div class="pa">
+                                        今日投资
+                                        <p class="f12 fc-999">2018.05.03</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="invest-period invest-period-dotted">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="invest-period invest-period-type-1">
+                                    <div class="pa">
+                                        开始计息
+                                        <p class="f12 fc-999">2018.05.03</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="invest-period invest-period-dotted">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="invest-period invest-period-type-1">
+                                    <div class="pa">
+                                        到期结束
+                                        <p class="f12 fc-999">2018.05.03</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="f12 fc-999 tr">具体以实际日期为准</div>
+                    </div>
+                </div>
+                <div class="slide-up-tips" ><span id="J_side_up_tips">上滑查看详情</span></div>
+            </div>
+        </div>
+    </div>
+    <footer class="m-footer line">
+        <div class="fixed-bottom-bar">
+            <div class="now-invest">
+                <a href="javascript:;" class="btn go-invest-btn" onclick="fty.dialog('#J_profile');">立即投资</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<div id="J_profile" style="display: none;">
+    <div class="m-dialog">
+        <div class="m-dialog-body">
+            <div class="profile-dialog">
+                <div class="profile-dialog-tit"></div>
+                <div class="profile-dialog-ct">
+                    <div class="t2 pb25">为了更好地保护您的投资权益，了解您可承受的风险程度，请在进行金融产品投资前完成风险承受能力测评，感谢您的理解与配合。</div>
+                    <div>
+                        <a href="javascript:;" class="btn go-invest-btn">立即投资</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-dialog">
+                <div class="profile-dialog-tit error"></div>
+                <div class="profile-dialog-ct">
+                    <div class="t2 pb25">很遗憾，该产品风险为 XX 风险等级，超出你的风险承受能力等级，可重新测评评定符合个人投资承受能力等级，了解详情请联系客服XXXXXX。</div>
+                    <div>
+                        <a href="javascript:;" class="btn db btn-gray">重新评测</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="close" onclick="layer.closeAll()">关闭</span>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="../../asset/plugins/layer_mobile/layer.js"></script>
+<script src="../../asset/plugins/iscroll/iscroll.js"></script>
+<script src="../../asset/js/common.js?365"></script>
+<script>
+    var slideUp = function () {
+        function loaded() {
+            var pullUpEl = document.getElementById('J_side_up_tips');
+            myScroll = new iScroll('wrapper', {
+                vScrollbar: false,
+                useTransition: true,
+                onScrollMove: function () {
+                    if ((this.maxScrollY - this.y) > 15 && !pullUpEl.className.match('flip-up')) {
+                        pullUpEl.className = 'flip-up';
+                    } else if ((this.maxScrollY - this.y) < 15  && pullUpEl.className.match('flip')) {
+                        pullUpEl.className = '';
+                    }
+                },
+                onScrollEnd: function () {
+                    if (pullUpEl.className.match('flip-up')) {
+                        fty.login()
+//                        window.location.assign('detail.html');
+                    }
+                }
+            });
+        }
+        document.addEventListener('DOMContentLoaded', loaded, false);
+        document.addEventListener('touchmove', function (e) {e.preventDefault(); },{ passive: false });
+    }();
+</script>
+</body>
+</html>

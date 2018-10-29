@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>泛天盈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../asset/css/layout.css">
+    <link rel="stylesheet" href="../../asset/css/centre.css">
+</head>
+<body>
+<div class="page">
+    <header class="m-header">
+        <div class="m-header-bar">
+            <div class="header-col">
+                <a href="javascript:;" class="go-back-icon" id="J_header_back"></a>
+            </div>
+            <div class="m-header-title">我的资产</div>
+            <div class="header-col"></div>
+        </div>
+    </header>
+    <div class="m-content bg-gray">
+        <ul class="flex tab-nav bg-white">
+            <li>
+                <a href="property.html" class="curr">总资产</a>
+            </li>
+            <li>
+                <a href="allIncome.html">累计收益</a>
+            </li>
+        </ul>
+        <div class="pr bg-white">
+            <div class="pa property-total tc lh24">
+                <p class="f12 fc-666">总资产(元)</p>
+                <div class="fb f18">10000.99</div>
+            </div>
+            <div id="eChart"></div>
+            <div class="pa property-item-row lh24 f13">
+                <div><em style="background: #1cadf2;"></em> 持有项目：2000000</div>
+                <div><em style="background: #f74b4b;"></em> 冻结金额：20000</div>
+                <div><em style="background: #f3d363;"></em> 可用余额：2000</div>
+            </div>
+        </div>
+        <div class="pt8 pb8">
+            <div class="bg-white">
+                <ul class="contract-item">
+                    <li><a href="#" class="fc-222 right-arrow-icon">充值记录</a></li>
+                    <li><a href="#" class="fc-222 right-arrow-icon">提现记录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="m-footer line">
+        <div class="fixed-bottom-bar">
+            <div class="now-invest property-fixed-btn">
+                <a href="#" class="btn db btn-red fr">充值</a>
+                <a href="#" class="btn go-invest-btn">提现</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="../../asset/plugins/layer_mobile/layer.js"></script>
+<script src="../../asset/plugins/echarts/js/echarts.common.min.js"></script>
+<script src="../../asset/js/common.js"></script>
+<script>
+    var myChart = echarts.init(document.getElementById('eChart'));
+    option = {
+        color: ['#f74b4b','#f3d363','#1cadf2'],
+        tooltip : {
+            trigger: 'item',
+            formatter: "<b>{b}（元）</b><br/>{c}<br/>{d}%"
+        },
+        series : [
+            {
+                type: 'pie',
+                radius : '40%',
+                center: ['50%', '47%'],
+
+                data:[
+                    {value:3000, name:'冻结金额'},
+                    {value:1335, name:'可用余额'},
+                    {value:310, name:'持有项目'}
+                ],
+                label: {
+                    normal: {
+                        show: false
+                    },
+                    emphasis: {
+                        show: true
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                }
+            }
+        ]
+    };
+    myChart.setOption(option);
+
+</script>
+</body>
+</html>

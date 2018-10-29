@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>泛天盈</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../asset/css/layout.css">
+    <link rel="stylesheet" href="../asset/css/invest.css">
+</head>
+<body>
+<div class="page">
+    <header class="m-header">
+        <div class="m-header-bar">
+            <div class="header-col"></div>
+            <div class="m-header-title">信息授权</div>
+            <div class="header-col"></div>
+        </div>
+    </header>
+    <div class="m-content">
+        <div class="authorization-tips">该服务由 <b class="fc-222">泛钛客</b> 提供，向其提供以下授权即可继续操作。</div>
+        <div class="pt25 pb25 f18 tc">
+            <p>XXXX账号</p>
+            <p>189********07</p>
+        </div>
+        <div><img src="../asset/images/authorization-mark-logo.png"></div>
+        <div class="pt10 pb15 tc f12 fc-666">你同意登录并将用户信息授权给 <span class="fc-red">天金所</span></div>
+        <div class="authorization-fixed">
+            <div class="authorization-fixed-ct">
+                <div class="pt15 pb15">
+                    <div class="checkbox-wraper"><input type="checkbox" class="checkbox">
+                        阅读并同意<a href="#" class="fc-blue">《用户信息授权协议》</a>、<a href="#" class="fc-blue">《风险揭示书》</a> 和<a href="#" class="fc-blue">《天金所服务协议（个人会员版）》</a></div>
+                </div>
+                <div class="pt15 pb25">
+                    <a href="javascript:;" class="btn go-invest-btn">同意授权</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="../asset/plugins/layer_mobile/layer.js"></script>
+<script src="../asset/js/common.js"></script>
+<script>
+    var authorizationSuc = function () {
+        var htmlStr = '';
+        htmlStr += '<div class="m-dialog tc">';
+        htmlStr += '    <div class="pt30 pb15">';
+        htmlStr += '        <em class="status-icon blue"></em>';
+        htmlStr += '    </div>';
+        htmlStr += '    <div class="pb5">恭喜你成功授权 <b class="fc-blue">天金所</b> </div>';
+        htmlStr += '    <div class="trade-password-btn"><a href="javascript:;" class="btn go-invest-btn" id="J_trade_password">确定</a></div>';
+        htmlStr += '	<span class="close" onclick="layer.closeAll()">关闭</span>';
+        htmlStr += '</div>';
+        fty.dialog(htmlStr);
+    };
+    authorizationSuc();
+</script>
+</body>
+</html>
